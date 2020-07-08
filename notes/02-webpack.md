@@ -14,8 +14,8 @@
 - 遵循 ES Modules 标准的 import 声明
 - 遵循 CommonJS 标准的 require 函数
 - 遵循 AMD 标准的 define 函数和 require 函数
-- *样式代码中的@import 指令和url函数
-- *HTML代码中图片标签的src属性
+- 样式代码中的@import 指令和url函数
+- HTML代码中图片标签的src属性
 
 #### loader
 - loader 负责资源文件从输入到输出的转换

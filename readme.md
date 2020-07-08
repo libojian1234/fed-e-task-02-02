@@ -6,7 +6,17 @@
 
 ## 2、Loader 和 Plugin 有哪些不同？请描述一下开发 Loader 和 Plugin 的思路。
 
+#### loader
 
+- loader 负责资源文件从输入到输出的转换
+- loader 实际上是以个管道的概念，对于同一个资源可以依次使用多个loader
+- loader 返回的结果必须是js代码，通常直接返回js代码的字符串或者使用另一个loader返回
+
+#### 插件机制介绍
+
+- 增强webpack 自动化能力
+- loader 专注实现资源模块加载，plugin解决其他自动化工作
+- 开发插件（通过在生命周期的钩子中挂载函数实现扩展）
 
 # 二、编程题
 
@@ -14,13 +24,7 @@
 
 具体任务及说明：
 
-1. 先下载任务的基础代码  百度网盘链接: https://pan.baidu.com/s/1pJl4k5KgyhD2xo8FZIms8Q 提取码: zrdd
-2. 这是一个使用 Vue CLI 创建出来的 Vue 项目基础结构
-3. 有所不同的是这里我移除掉了 vue-cli-service（包含 webpack 等工具的黑盒工具）
-4. 这里的要求就是直接使用 webpack 以及你所了解的周边工具、Loader、Plugin 还原这个项目的打包任务
-5. 尽可能的使用上所有你了解到的功能和特性
-
-# 作业要求
+# 
 
 
 
