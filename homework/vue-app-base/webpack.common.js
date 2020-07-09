@@ -29,6 +29,12 @@ module.exports = {
                 }
             },
             {
+                test: /.js|vue$/,
+                exclude: /node_modules/,
+                use: 'eslint-loader',
+                enforce: 'pre'
+            },
+            {
                 test: /.css$/,
                 //配置多个load，从后往前执行
                 use: [
